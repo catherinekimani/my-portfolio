@@ -28,4 +28,32 @@
 </div>
 {% endfor %}
 </div>
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+<!-- about -->
+<div id="about">
+<div class="row container text-light">
+{% for about in about %}
+<!-- about pic -->
+<div class="col-md-6 initial-1 aos-init" data-aos="zoom-in" data-aos-delay="300">
+        <img src="{{about.about_pic.url}}" alt="" class="img-fluid" width="70%" height="70%">
+</div>
+<!-- endpic -->
+<div class="col-md-6 initial-1 aos-init" data-aos="zoom-in" data-aos-delay="300" style="margin-top: 7%;">
+    <h1>{{about.title}}</h1>
+    <p style="font-size: 1.6rem;">{{about.about}}</p>
+    <a href="" class="btn btn-danger"><i class="fab fa-html5"></i></a>
+    <a href="" class="btn btn-primary"><i class="fab fa-css3"></i></a>
+    <a href="" class="btn btn-info"><i class="fab fa-python"></i></a>
+    <a href="" class="btn btn-danger"><i class="fab fa-angular"></i></a>
+    <a href="" class="btn btn-primary"><i class="fab fa-figma"></i></a>
+    <a href="" class="btn btn-danger"><i class="fab fa-git"></i></a>
+    <a href="" class="btn btn-dark"><i class="fab fa-github"></i></a>
+    <br> <br> <br>
+    <a href="/" class="btn btn-warning ms-5"><i class="fas fa-arrow-up"></i></a>Back To The Top
+
+</div>
+<!-- about descr -->
+{% endfor %}
+</div>
+</div>
 {% endblock %}
