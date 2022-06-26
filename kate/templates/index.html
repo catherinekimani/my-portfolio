@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row container mt-5">
+    {% for profile in profile %}
+<div class="col-md-7">
+<div class="container text-light" >
+<h1 class="mt-5">Hello There! <span class="wave">&#128075;</span></h1>
+<h1 class="mt-5">I am {{profile.name}}</h1>
+<p class='mt-5'style="font-size: 1.6rem;">{{profile.about}}</p>
+<!-- links start -->
+<div class="links">
+<a class="btn btn-dark" href="{{profile.github}}"><i class="fab fa-github"></i></a>
+<a class="btn btn-primary" href="{{profile.linkedin}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<a class="btn btn-primary" href="{{profile.facebook}}"><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-info" href="{{profile.twitter}}"><i class="fab fa-twitter"></i></a>
+</div>
+<!-- endlinks -->
+<div class="mb-5 mt-5">
+<a class="btn btn-lg btn-primary" href="mailto:{{profile.contact}}">Contact</a>
+<a class="btn btn-lg btn-primary ms-5" href="{{profile.resume}}">Resume</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-5 initial-1 aos-init" data-aos="zoom-in" data-aos-delay="300">
+    <img src="{{profile.profile_pic.url}}" alt="" class="img-fluid" width="70%" height="70%">
+</div>
+{% endfor %}
+</div>
+{% endblock %}
