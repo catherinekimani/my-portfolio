@@ -35,3 +35,18 @@ class About(models.Model):
     
     def __str__(self):
         return f'{self.about}'
+    
+class Skills(models.Model):
+    title = models.CharField(max_length=100)
+    skills = models.TextField()
+    skills_count = models.IntegerField()
+    contact = models.EmailField(max_length=100)
+    
+    def save_skills(self):
+        self.save()
+        
+    def delete_skills(self):
+        self.delete()
+    
+    def __str__(self):
+        return f'{self.skills}'
