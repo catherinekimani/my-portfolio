@@ -56,4 +56,66 @@
 {% endfor %}
 </div>
 </div>
+
+<!-- skills -->
+<div id="skills">
+<div class="col-md-9 initial-1 aos-init text-light" data-aos="zoom-in" data-aos-delay="300" style="margin-top: 7%;">
+    <div class="row">
+        {% for skills in skills %}
+            <div class="col-md-8">
+                <marquee behavior="" direction="right"><h1 class="text-center">{{skills.title}}</h1></marquee>
+                <div class="container">
+			<div class="skillset">
+
+				<div class="skill-lockup">
+					<span class="skill-name mb">HTML</span><span class="skill-status">85%</span>
+					<span class="skill-bar">
+						<span class="skill-level  html"></span>
+					</span>
+				</div><!-- Html end -->
+
+				<div class="skill-lockup mr">
+					<span class="skill-name mb">CSS</span><span class="skill-status">75%</span>
+					<span class="skill-bar">
+						<span class="skill-level css"></span>
+					</span>
+				</div><!-- css end -->
+
+				<div class="skill-lockup">
+					<span class="skill-name mb">Angular</span><span class="skill-status">40%</span>
+					<span class="skill-bar">
+						<span class="skill-level angular"></span>
+					</span>
+				</div><!-- angular end -->
+
+				<div class="skill-lockup mr">
+					<span class="skill-name mb">Python</span><span class="skill-status">50%</span>
+					<span class="skill-bar">
+						<span class="skill-level python"></span>
+					</span>
+				</div><!--python  end -->
+
+				<div class="skill-lockup">
+					<span class="skill-name mb">Frameworks</span><span class="skill-status">75%</span>
+					<span class="skill-bar">
+						<span class="skill-level frameworks"></span>
+					</span>
+				</div><!-- frameworks end -->
+
+				<div class="skill-lockup mr">
+					<span class="skill-name mb">SoftSkills</span><span class="skill-status">70%</span>
+					<span class="skill-bar">
+						<span class="skill-level soft"></span>
+					</span>
+				</div>	
+			</div><!-- skillset end -->
+		</div><!-- container end -->
+        {% endfor %}
+    </div>
+    <div class="col-md-4">
+        <img src="/static/image/lap.jpeg" alt="" class="img-fluid"> <br> <br> <br>
+    <a href="/" class="btn btn-warning ms-5"><i class="fas fa-arrow-up"></i></a>Back To The Top
+    </div>
+</div>
+</div>
 {% endblock %}
