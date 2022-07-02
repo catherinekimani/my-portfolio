@@ -49,7 +49,7 @@
     <a href="" class="btn btn-danger"><i class="fab fa-git"></i></a>
     <a href="" class="btn btn-dark"><i class="fab fa-github"></i></a>
     <br> <br> <br>
-    <a href="/" class="btn btn-warning ms-5"><i class="fas fa-arrow-up"></i></a>Back To The Top
+    <a href="/" class="btn back btn-primary ms-5"><i class="fas fa-arrow-up"></i></a>
 
 </div>
 <!-- about descr -->
@@ -142,4 +142,55 @@
 {% endfor %}
 </div>
 </div>
+
+<!-- contact section -->
+<footer id="contact">
+        <div class="container">
+            <div class="small-container">
+                <div class="row4">
+                {% for infor in contact %}
+                    <div class="col-md-6 initial-8 aos-init" data-aos="fade-down-right" data-aos-delay="300">
+                <h1>CONTACT ME</h1>
+                        <p id="helo">Wanna talk about a project or just saying hi <img src="" alt="" id="e" class="wave"></p>
+                        <div class="contact-info">
+                            <div class="c-ico">
+                    <i class="fa fa-comments"></i> <span id="io">Say Hello</span></i>
+                            </div>
+                            <p>Email: <span>{{infor.contact}}</span></p>
+                        </div>
+						<div class="contact-info links">
+                            <h4>
+							<a class="btn btn-dark" href="{{infor.github}}"><i class="fab fa-github"></i></a>
+							<a class="btn btn-primary" href="{{infor.linkedin}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							<a class="btn btn-primary" href="{{infor.facebook}}"><i class="fab fa-facebook-f"></i></a>
+							<a class="btn btn-info" href="{{infor.twitter}}"><i class="fab fa-twitter"></i></a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class=" col-md-6 initial-7 aos-init " data-aos="zoom-in " data-aos-delay="700 ">
+                        <img src="/static/image/KW-modified.png" alt=" " class="img-fluid" width="70%" height="70%">
+                    </div>
+				{% endfor %}
+				</div>
+                <div class="footing ">
+                    <div class="row justify-content-center ">
+                        <div class="col-md-4 ">
+                            <p>Designed By </p>
+                            <p>Catherine Kimani</p>
+                            <p>A FullStack Developer</p>
+                            <p id="copy ">© COPYRIGHTS FOLIO. ALL RIGHTS RESERVED.
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="up-arrow ">
+            <div class="arrow ">
+                <a href="# "><i class="fa fa-angle-up "></i>
+            </a>
+            </div>
+        </div>
+
+    </footer>
 {% endblock %}
