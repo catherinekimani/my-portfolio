@@ -68,8 +68,6 @@ class Project(models.Model):
     
 class Contact(models.Model):
     title = models.CharField(max_length=100)
-    url = models.URLField()
-    contact_img = CloudinaryField('img')
     created_at = models.DateTimeField(auto_now_add=True)
     contact = models.EmailField(max_length=100)
     github = models.URLField(max_length=200)
