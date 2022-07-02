@@ -749,3 +749,37 @@ p {
 		transform: rotate(0);
 	}
 }
+
+.arrow {
+	animation-name: arrow-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 0%;
+}
+@keyframes arrow-animation {
+	0% {
+		transform: rotate(0);
+	}
+	10% {
+		transform: rotate(14deg);
+	}
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
