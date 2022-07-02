@@ -6,7 +6,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=100)
     about = models.TextField()
     contact = models.EmailField(max_length=100)
-    resume = CloudinaryField("resume",blank=True,null=True)
+    resume = models.URLField(blank=True, null=True)
     github = models.URLField(max_length=200)
     linkedin = models.URLField(max_length=200)
     facebook = models.URLField(max_length=200)
