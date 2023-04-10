@@ -21,7 +21,7 @@
 
 ## Live Link
 
-https://catie-portfolio.herokuapp.com/
+coming soon
 
 ### Installation Process
 
